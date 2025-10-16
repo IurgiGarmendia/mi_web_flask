@@ -6,5 +6,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+
+@app.route("/ping")
+def ping():
+    return {"status": "ok"}
+
 if __name__ == "__main__":
     app.run(debug=True)
