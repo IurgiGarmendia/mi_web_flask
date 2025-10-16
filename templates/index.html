@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Web Flask</title>
+     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1>¡Hola, Flask con HTML!</h1>
+    <p>Esta es mi primera página usando Flask y una plantilla HTML.</p>
+    <p>Para ejecutar en terminal cmd: venv\Scripts\activate</p>
+    <p>se activa y pone (venv)</p>
+    <p>para publicar en el servidor de prueba: python app.py</p>
+    <p>boton dcho y publicar en server, creo q eso no está activado (en casa si lo tengo), si voy a 
+        la url funciona: http://127.0.0.1:5000/
+    </p>
+    <p>
+        <py-script>
+        print("¡Hola, mundo! Esto se ejecuta desde Python.")
+        # Puedes interactuar con el DOM aquí
+        element = document.createElement('h2')
+        element.textContent = "Hecho con Python y PyScript"
+        document.body.appendChild(element)
+    </py-script>
+    </p>
+</body>
+</html>
